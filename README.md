@@ -84,8 +84,8 @@ SHA at the HEAD of the release.
 4. *Login*
     - Daftar dan login menggunakan akun masing-masing untuk mengakses webnya.
     - Login ke dashboard admin menggunakan akun operator dengan email dan password berikut:
-        - email: apelmerah0987@gmail.com 
-        - password: apelmerah123
+        - email: ghaitsazahira007@gmail.com
+        - password: aaaaaa
 ## Catatan
 
 -   Pastikan Anda memiliki Git, Node.js, dan NPM yang terinstal di sistem Anda sebelum menjalankan langkah-langkah di atas.
