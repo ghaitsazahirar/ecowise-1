@@ -24,7 +24,7 @@ module.exports = {
   },
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'public'),
     clean: true,
   },
   module: {
@@ -138,7 +138,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/public/'),
-          to: path.resolve(__dirname, 'dist/'),
+          to: path.resolve(__dirname, 'public/'),
         },
       ],
     }),
@@ -146,14 +146,14 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'node_modules/firebase/'),
-          to: path.resolve(__dirname, 'dist/'),
+          to: path.resolve(__dirname, 'public/'),
         },
       ],
     }),
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, 'public'),
     },
     compress: true,
     port: 8080,  // Ganti 3000 dengan port yang Anda inginkan
