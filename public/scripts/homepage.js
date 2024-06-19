@@ -95,23 +95,22 @@ async function displayUserProfile(user) {
                 const displayName = userData.name || 'Nama Pengguna';
                 welcomeUserElement.innerHTML = `
                     <div class="welcome-user">
-                        <div class="container-homepage-img">
-                            <img src="assets/svg/environment-3.svg" alt="environtment-3">
-                        </div>
-                        <div class="welcome-text">
-                            <p>Selamat Datang</p>
-                            <h1 id="username">${displayName}</h1>
-                        </div>
+                <div class="container-homepage-img">
+                    <img src="assets/svg/environment-3.svg" alt="environment-3">
+                </div>
+                <div class="welcome-text">
+                    <p>Selamat Datang</p>
+                    <h1 id="username">${displayName}</h1>
+                </div>
+            </div>
+            <div class="welcome-user">
+                <div class="container-homepage-img">
+                    <div class="text-point">
+                        <p id="points"><i class="fa-solid fa-star"></i><span id="userPoints">Loading...</span></p>
                     </div>
-                    <div class="welcome-user">
-                        <div class="container-homepage-img">
-                            <div class="text-point">
-                                <p id="points"><i class="fa-solid fa-star"> </i><span id="userPoints">Loading...</span></p>
-                            </div>
-                            <img src="assets/svg/environment-4.svg" alt="environtment-4">
-                        </div>
-                    </div>
-                    <button class="profile-button" onclick="viewProfile()">View Profile</button>
+                    <img src="assets/svg/environment-4.svg" alt="environment-4">
+                </div>
+            </div>
                 `;
                 const userPointsElement = welcomeUserElement.querySelector('#userPoints');
                 await displayUserPoints(userPointsElement, user.uid); // Tampilkan poin pengguna
